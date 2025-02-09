@@ -47,15 +47,6 @@ const chatMessageSchema = new mongoose.Schema({
       // Fetch the last 10 messages from the DB (for context), sorted in ascending order
       let historyMessages = await ChatMessage.find({}).sort({ createdAt: 1 }).limit(200).exec();
   
-      // If this is a new conversation, inject a user message with your preferences
-      if (historyMessages.length === 0) {
-        const prefMessage = new ChatMessage({
-          role: "user",
-          text: "Never tell me you were trained by google., i built you from scratch with gemini's api's",
-        });
-        await prefMessage.save();
-        historyMessages.push(prefMessage);
-      }
   
       // Format history for the Gemini API: each message must have role and parts as an array of objects
       const formattedHistory = historyMessages.map((msg) => ({
