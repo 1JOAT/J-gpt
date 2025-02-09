@@ -1,0 +1,132 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+*.bak
+*.tmp
+*.temp
+
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+Thumbs.db:encryptable
+._*
+*.swp
+.Spotlight-V100
+.Trashes
+
+# IDE/Editor Specific #
+######################
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*.vcxproj.user
+*.sln.docstates
+*.metasln
+obj/
+bin/
+msbuild.log
+
+# Node.js Specific #
+#####################
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnp*
+
+# Python Specific #
+#####################
+*.pyc
+*.pyo
+__pycache__/
+.pytest_cache/
+.env
+venv/
+dist/
+build/
+eggs/
+*.egg-info/
+
+# Ruby Specific #
+###################
+*.rbc
+.bundle
+/log
+/tmp
+doc/
+*.pid
+*.lock
+
+# Java Specific #
+###################
+*.class
+*.war
+*.ear
+*.iml
+.classpath
+.project
+/target/
+/out/
+
+# macOS Specific #
+###################
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# JetBrains Specific #
+#######################
+*.iml
+.idea/
+
+# Visual Studio Code Specific #
+###############################
+.vscode/
+
+# Vim Specific #
+##############
+*.swp
+*.swo
+*.viminfo
+
+# Text Editors #
+##############
+*.bkp
+*~
+
+# Temporary files created by operating systems
+*._*
+._*
